@@ -7,4 +7,4 @@ alias nv="watch -n 0.1 nvidia-smi"
 alias tasks="ps -aux | grep"
 
 #login to school computers
-alias sshs="sshudson@linux.student.cs.uwaterloo.ca"
+alias sshs="ssh -X shudson@linux.student.cs.uwaterloo.ca"
