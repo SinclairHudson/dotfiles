@@ -8,3 +8,9 @@ alias tasks="ps -aux | grep"
 
 #login to school computers
 alias sshs="ssh -X shudson@linux.student.cs.uwaterloo.ca"
+
+#when logged into the school VPN, wato stuff
+alias wato3='ssh -X -L 8889:localhost:8889 sshudson@129.97.228.192'
+alias wato2='ssh -X -L 8889:localhost:8889 sshudson@129.97.228.191'
+alias rugged='ssh -X -L 8889:localhost:8889 sshudson@wato-rugged.uwaterloo.ca'
+
