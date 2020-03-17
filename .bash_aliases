@@ -14,3 +14,6 @@ alias wato3='ssh -X -L 8889:localhost:8889 sshudson@129.97.228.192'
 alias wato2='ssh -X -L 8889:localhost:8889 sshudson@129.97.228.191'
 alias rugged='ssh -X -L 8889:localhost:8889 sshudson@wato-rugged.uwaterloo.ca'
 
+# for huawei coop
+alias comp7='ssh -X s84152660@10.193.192.89'
+alias ehsan='ssh -X coop@10.213.17.119'
