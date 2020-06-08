@@ -3,3 +3,4 @@ cp .bashrc ~
 cp .zshrc ~
 cp .tmux.conf ~
 cp powerlevel10k ~
+cp .vimrc ~
