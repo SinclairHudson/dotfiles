@@ -18,6 +18,7 @@ https://www.youtube.com/watch?v=n9k9scbTuvQ
 
 ## Finishing the vim plugin installation:
 
+Make sure you have the latest VIM version installed, otherwise some plugins will not work!
 ```
 $ mkdir ~/.vim/undodir -p
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
