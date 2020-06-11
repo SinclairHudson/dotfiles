@@ -1,6 +1,5 @@
-cp .bash_aliases ~
-cp .bashrc ~
-cp .zshrc ~
-cp .tmux.conf ~
-cp powerlevel10k ~
-cp .vimrc ~
+cp .bash_aliases ..
+cp .zshrc .. 
+cp .tmux.conf ..
+cp -r powerlevel10k ..
+cp .vimrc ..
