@@ -46,6 +46,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " for automatically adding the closing brace.
 Plug 'jiangmiao/auto-pairs'
+Plug 'Chiel92/vim-autoformat'
 
 "  I AM SO SORRY FOR DOING COLOR SCHEMES IN MY VIMRC, BUT I HAVE
 "  TOOOOOOOOOOOOO
