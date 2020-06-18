@@ -47,7 +47,7 @@ Plug 'junegunn/fzf.vim'
 " for automatically adding the closing brace.
 Plug 'jiangmiao/auto-pairs'
 Plug 'Chiel92/vim-autoformat'
-
+Plug 'preservim/nerdcommenter'
 "  I AM SO SORRY FOR DOING COLOR SCHEMES IN MY VIMRC, BUT I HAVE
 "  TOOOOOOOOOOOOO
 Plug 'gruvbox-community/gruvbox'
@@ -95,6 +95,7 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>q :wincmd q<CR>
+nnoremap <leader>f :Autopep8<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
