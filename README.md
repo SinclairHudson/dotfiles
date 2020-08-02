@@ -26,8 +26,7 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 
 Make sure your `.vimrc` file is sourced, and then open vim and type `:PlugInstall`.
-Once you have the plugins, there are some pretty great keybinds that I've set up.
-
+You're also going to need node.js for coc, a plugin that autocompletes: `sudo apt install nodejs`.
 ## Installing conda
 Download from the official anaconda website, `curl -O` the link in your downloads folder.
 Next, `chmod -x {Anacondascript}.sh`, so that you can run it without sudo.
