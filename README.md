@@ -59,3 +59,5 @@ sudo chmod 664 /etc/systemd/system/autoconfig.service
 sudo systemctl daemon-reload
 sudo systemctl enable autoconfig.service
 ```
+
+This of course means that your configs will get overwritten any time you boot up. If you want to save a new alias, then push it to the repo or it will be lost.
