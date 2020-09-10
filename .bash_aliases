@@ -7,6 +7,7 @@ alias nv="watch -n 0.1 nvidia-smi"
 alias tasks="ps -aux | grep"
 alias ca="conda activate"
 alias py3="python3"
+alias gs="git status"
 
 #login to school computers
 alias sshs="ssh -X sshudson@linux.student.cs.uwaterloo.ca"
