@@ -31,3 +31,31 @@ You're also going to need node.js for coc, a plugin that autocompletes: `sudo ap
 Download from the official anaconda website, `curl -O` the link in your downloads folder.
 Next, `chmod -x {Anacondascript}.sh`, so that you can run it without sudo.
 Finally, `bash ./{Anacondascript}.sh` and follow the instructions.
+
+
+## Automatically syncing configurations
+
+At the time of writing, I work on 3 - 7 ubuntu machines every week.
+So, I really would like them all to have the same aliases and vim configurations.
+to set up an automatic service that pulls this repo and updates the config:
+
+`/etc/systemd/system/autoconfig.service`:
+```
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/absolute/to/this/repo/config/auto.sh
+
+[Install]
+WantedBy=default.target
+```
+
+then:
+
+```
+sudo chmod 744 /absolute/to/this/repo/config/auto.sh
+sudo chmod 664 /etc/systemd/system/autoconfig.service
+sudo systemctl daemon-reload
+sudo systemctl enable autoconfig.service
+```
