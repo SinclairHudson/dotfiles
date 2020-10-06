@@ -57,7 +57,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug '/home/mpaulson/personal/vim-be-good'
 
-Plug 'ThePrimeagen/vim-apm' "for flexing
 call plug#end()
 
 " --- vim go (polyglot) settings.
