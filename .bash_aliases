@@ -24,3 +24,4 @@ alias delta='ssh -X -L 8889:localhost:8889 sshudson@wato-delta.uwaterloo.ca'
 # for huawei coop
 alias comp7='ssh -X s84152660@10.193.192.89'
 alias ehsan='ssh -X coop@10.213.17.119'
+
