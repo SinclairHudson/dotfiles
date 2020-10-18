@@ -10,7 +10,7 @@ alias py3="python3"
 alias gs="git status"
 
 # for docker
-dcon() { docker exec =i -t $@ /bin/bash ;}
+dcon() { docker exec -i -t $@ /bin/bash ;}
 alias dls='docker ps'
 
 alias vim="nvim" # nvim > vim
