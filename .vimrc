@@ -41,21 +41,18 @@ Plug 'tweekmonster/gofmt.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot' " syntax highlighting
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-" for automatically adding the closing brace.
-Plug 'jiangmiao/auto-pairs'
-Plug 'Chiel92/vim-autoformat'
-Plug 'preservim/nerdcommenter'
-"  I AM SO SORRY FOR DOING COLOR SCHEMES IN MY VIMRC, BUT I HAVE
-"  TOOOOOOOOOOOOO
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
-Plug '/home/mpaulson/personal/vim-be-good'
+Plug 'junegunn/fzf.vim' " finding files
+Plug 'jiangmiao/auto-pairs' " because I forget the closing brace
+Plug 'Chiel92/vim-autoformat' " autoformatting
+Plug 'preservim/nerdcommenter' " for commenting blocks of code
+Plug 'gruvbox-community/gruvbox' " colour scheme
+Plug 'sainnhe/gruvbox-material' " colour scheme
+Plug 'phanviet/vim-monokai-pro' " colour scheme
+Plug 'vim-airline/vim-airline' " bottom line that looks nice
+Plug 'flazz/vim-colorschemes' " vim colour schemes
+Plug '/home/mpaulson/personal/vim-be-good' " practicing vim movement
 
 call plug#end()
 
@@ -153,3 +150,5 @@ endfun
 
 autocmd BufWritePre * :call TrimWhitespace()
 let g:coc_disable_startup_warning = 1
+
+au BufWrite * :Autoformat " autoformat on save
