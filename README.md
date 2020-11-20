@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=n9k9scbTuvQ
 
 Make sure your `.vimrc` file is sourced, and then open vim and type `:PlugInstall`.
 
-## install Firenvim:
+## Install Firenvim:
 This is for nvim in the browser. Yeah.
 ```bash
 nvim --headless "+call firenvim#install(69) | q"
