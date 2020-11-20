@@ -36,7 +36,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }  "in browser
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(69) } }  "in browser (nice)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tweekmonster/gofmt.vim'
 Plug 'tpope/vim-fugitive'
