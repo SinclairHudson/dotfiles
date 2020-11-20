@@ -18,15 +18,8 @@ https://www.youtube.com/watch?v=n9k9scbTuvQ
 
 ## Finishing the vim plugin installation:
 
-Make sure you have the latest VIM version installed, otherwise some plugins will not work!
-```
-$ mkdir ~/.vim/undodir -p
-$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
 Make sure your `.vimrc` file is sourced, and then open vim and type `:PlugInstall`.
-You're also going to need node.js for coc, a plugin that autocompletes: `sudo apt install nodejs`.
+
 ## Installing conda
 Download from the official anaconda website, `curl -O` the link in your downloads folder.
 Next, `chmod -x {Anacondascript}.sh`, so that you can run it without sudo.
