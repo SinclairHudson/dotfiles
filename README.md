@@ -20,6 +20,13 @@ https://www.youtube.com/watch?v=n9k9scbTuvQ
 
 Make sure your `.vimrc` file is sourced, and then open vim and type `:PlugInstall`.
 
+## install Firenvim:
+This is for nvim in the browser. Yeah.
+```bash
+nvim --headless "+call firenvim#install(69) | q"
+```
+Then, install the [chrome extension.](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo)
+
 ## Installing conda
 Download from the official anaconda website, `curl -O` the link in your downloads folder.
 Next, `chmod -x {Anacondascript}.sh`, so that you can run it without sudo.
