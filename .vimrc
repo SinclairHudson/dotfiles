@@ -36,6 +36,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }  "in browser
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tweekmonster/gofmt.vim'
 Plug 'tpope/vim-fugitive'
@@ -92,7 +93,7 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>q :wincmd q<CR>
-nnoremap <leader>f :Autopep8<CR>
+nnoremap <leader>f :call CocAction('format')<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <Leader>ps :Rg<SPACE>
@@ -137,10 +138,10 @@ nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
 
-" Sweet Sweet FuGITive
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
 nmap <leader>gs :G<CR>
+
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
@@ -150,5 +151,3 @@ endfun
 
 autocmd BufWritePre * :call TrimWhitespace()
 let g:coc_disable_startup_warning = 1
-
-au BufWrite * :Autoformat " autoformat on save
