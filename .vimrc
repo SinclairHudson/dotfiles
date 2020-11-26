@@ -57,6 +57,10 @@ Plug '/home/mpaulson/personal/vim-be-good' " practicing vim movement
 
 call plug#end()
 
+" block firenvim from being in use on these sites
+let fc = g:firenvim_config['localSettings']
+let fc['https?://instagram.com/'] = { 'takeover': 'never', 'priority': 1 }
+
 " --- vim go (polyglot) settings.
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
