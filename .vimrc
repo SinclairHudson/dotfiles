@@ -73,7 +73,7 @@ let g:firenvim_config = {
 
 " block firenvim from being in use on these sites
 let fc = g:firenvim_config['localSettings']
-let fc['https?://instagram.com/'] = { 'takeover': 'never', 'priority': 1 }
+let fc['https://www.instagram.com/'] = { 'takeover': 'never', 'priority': 1 }
 
 " --- vim go (polyglot) settings.
 let g:go_highlight_build_constraints = 1
