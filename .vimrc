@@ -57,6 +57,20 @@ Plug '/home/mpaulson/personal/vim-be-good' " practicing vim movement
 
 call plug#end()
 
+let g:firenvim_config = {
+    \ 'globalSettings': {
+        \ 'alt': 'all',
+    \  },
+    \ 'localSettings': {
+        \ '.*': {
+            \ 'cmdline': 'neovim',
+            \ 'priority': 0,
+            \ 'selector': 'textarea',
+            \ 'takeover': 'always',
+        \ },
+    \ }
+\ }
+
 " block firenvim from being in use on these sites
 let fc = g:firenvim_config['localSettings']
 let fc['https?://instagram.com/'] = { 'takeover': 'never', 'priority': 1 }
