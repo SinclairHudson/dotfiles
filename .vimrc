@@ -54,6 +54,8 @@ Plug 'phanviet/vim-monokai-pro' " colour scheme
 Plug 'vim-airline/vim-airline' " bottom line that looks nice
 Plug 'flazz/vim-colorschemes' " vim colour schemes
 Plug '/home/mpaulson/personal/vim-be-good' " practicing vim movement
+Plug 'lervag/vimtex', {'for': 'tex'}
+
 
 call plug#end()
 
@@ -77,6 +79,7 @@ let fc['https://www.instagram.com/'] = { 'takeover': 'never', 'priority': 1 }
 let fc['localhost'] = { 'takeover': 'never', 'priority': 1 }  " for jupyter notebooks
 let fc['https://www.overleaf.com/'] = { 'takeover': 'never', 'priority': 1 }
 let fc['https://www.duolingo.com/'] = { 'takeover': 'never', 'priority': 1 }
+let fc['https://www.desmos.com/'] = { 'takeover': 'never', 'priority': 1 }
 
 " --- vim go (polyglot) settings.
 let g:go_highlight_build_constraints = 1
@@ -117,13 +120,15 @@ nnoremap <leader>q :wincmd q<CR>
 nnoremap <leader>f :call CocAction('format')<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
-nnoremap <Leader>ps :Rg<SPACE>
+nnoremap <leader>ps :Rg<SPACE>
+nnoremap <leader>m :VimtexCompile<CR>
+
 nnoremap <C-p> :GFiles<CR>
-nnoremap <Leader>pf :Files<CR>
-nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <Leader>+ :vertical resize +5<CR>
-nnoremap <Leader>- :vertical resize -5<CR>
-nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
+nnoremap <leader>pf :Files<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>- :vertical resize -5<CR>
+nnoremap <leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
@@ -164,11 +169,12 @@ nmap <leader>gf :diffget //2<CR>
 nmap <leader>gs :G<CR>
 
 
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
+" trims whitespace at the end of lines
+"fun! TrimWhitespace()
+    "let l:save = winsaveview()
+    "keeppatterns %s/\s\+$//e
+    "call winrestview(l:save)
+"endfun
 
-autocmd BufWritePre * :call TrimWhitespace()
+"autocmd BufWritePre * :call TrimWhitespace()
 let g:coc_disable_startup_warning = 1
