@@ -122,6 +122,8 @@ nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <leader>m :VimtexCompile<CR>
+" toggle spell check
+nnoremap <leader>s :set spell!<CR>  
 
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR>
