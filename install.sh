@@ -1,10 +1,15 @@
-apt-get install tmux
+apt-get install -y tmux
 #apt-get install vim
-apt-get install zsh
-apt-get install curl
-apt-get install nodejs # for COC
-apt-get install neovim
+apt-get install -y zsh
+apt-get install -y curl
+apt-get install -y nodejs # for COC
+apt-get install -y neovim
+apt-get install -y npm
 chsh -s $(which zsh)
+
+npm cache clean -f
+npm install -g n
+n stable
 
 mkdir ~/.vim/undodir -p # make the undo directory for vim
 mkdir ~/.config/nvim -p
