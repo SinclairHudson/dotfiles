@@ -3,6 +3,7 @@ cp .zshrc ~
 cp .tmux.conf ~
 cp .vimrc ~
 cp .vimrc ~/.config/nvim/init.vim
+cp sshconfig ~/.ssh/config
 
 
 cp i3config ~/.config/i3/config
