@@ -1,0 +1,7 @@
+Host thor
+    HostName vm1.thor.watonomous.ca
+    User sshudson
+
+Host delta
+    HostName vm1.delta.watonomous.ca
+    User sshudson
