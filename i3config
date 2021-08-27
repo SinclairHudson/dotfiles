@@ -181,6 +181,8 @@ bindsym $mod+r mode "resize"
 
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 bindsym $mod+g exec google-chrome --password-store=gnome
+bindsym $mod+z exec discord
+bindsym $mod+x exec spotify
 
 workspace 1 output primary # primary display gets 1
 
