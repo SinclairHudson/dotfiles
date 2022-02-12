@@ -39,7 +39,14 @@ Download from the official anaconda website, `curl -O` the link in your download
 Next, `chmod -x {Anacondascript}.sh`, so that you can run it without sudo.
 Finally, `bash ./{Anacondascript}.sh` and follow the instructions.
 
+### rofi 
+
+`run rofi-theme-selector`
+
+### spicetify and gruvbox theme
+
+https://github.com/khanhas/spicetify-cli
+https://github.com/morpheusthewhite/spicetify-themes
 
 ## Automatically syncing configurations
 
-# TODO
