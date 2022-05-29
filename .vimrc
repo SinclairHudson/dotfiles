@@ -36,7 +36,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(69) } }  "in browser (nice)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tweekmonster/gofmt.vim'
 Plug 'tpope/vim-fugitive'
@@ -45,7 +44,6 @@ Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot' " syntax highlighting
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " finding files
-Plug 'jiangmiao/auto-pairs' " because I forget the closing brace
 Plug 'Chiel92/vim-autoformat' " autoformatting
 Plug 'preservim/nerdcommenter' " for commenting blocks of code
 Plug 'gruvbox-community/gruvbox' " colour scheme
@@ -53,7 +51,6 @@ Plug 'sainnhe/gruvbox-material' " colour scheme
 Plug 'phanviet/vim-monokai-pro' " colour scheme
 Plug 'vim-airline/vim-airline' " bottom line that looks nice
 Plug 'flazz/vim-colorschemes' " vim colour schemes
-Plug '/home/mpaulson/personal/vim-be-good' " practicing vim movement
 Plug 'lervag/vimtex', {'for': 'tex'}
 
 

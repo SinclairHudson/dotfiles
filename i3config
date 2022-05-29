@@ -13,13 +13,14 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Noto Sans 8
+#font pango: Ubuntu Display 8
 
 # xrandr --output DP-2 --primary
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
+font xft:Droid Sans Mono, FontAwesome 9
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -49,7 +50,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -179,10 +180,17 @@ bindsym $mod+r mode "resize"
 # CUSTOM STARTS HERE
 #
 
+exec flameshot  # screencapture always
+
+for_window [class="Spotify"] move to workspace $ws10
+for_window [class="discord"] move to workspace $ws1
+
+
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 bindsym $mod+g exec google-chrome --password-store=gnome
 bindsym $mod+z exec discord
 bindsym $mod+x exec spotify
+bindsym Menu exec flameshot gui
 
 workspace 1 output primary # primary display gets 1
 
@@ -190,16 +198,17 @@ workspace 1 output primary # primary display gets 1
 # panels
 # panel
 bar {
+        font xft:Droid Sans Mono, FontAwesome 10
         colors {
-        background #2f343f
-        statusline #2f343f
-        separator #4b5262
+        background #282828
+        statusline #282828
+        separator #458588
 
         # colour of border, background, and text
-        focused_workspace       #2f343f #bf616a #d8dee8
-        active_workspace        #2f343f #2f343f #d8dee8
-        inactive_workspace      #2f343f #2f343f #d8dee8
-        urgent_workspacei       #2f343f #ebcb8b #2f343f
+        focused_workspace       #ebdbb2 #d65d0e #ebdbb2
+        active_workspace        #282828 #282828 #ebdbb2
+        inactive_workspace      #2f343f #282828 #ebdbb2
+        urgent_workspacei       #d65d0e #282828 #ebdbb2
     }
         status_command i3status
 }
