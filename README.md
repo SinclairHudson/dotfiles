@@ -48,5 +48,8 @@ Finally, `bash ./{Anacondascript}.sh` and follow the instructions.
 https://github.com/khanhas/spicetify-cli
 https://github.com/morpheusthewhite/spicetify-themes
 
-## Automatically syncing configurations
-
+## Tools used:
+https://github.com/tmux-plugins/tpm
+https://github.com/Gogh-Co/Gogh
+https://ohmyz.sh/#install
+https://github.com/tobi-wan-kenobi/bumblebee-status
