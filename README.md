@@ -53,3 +53,4 @@ https://github.com/tmux-plugins/tpm
 https://github.com/Gogh-Co/Gogh
 https://ohmyz.sh/#install
 https://github.com/tobi-wan-kenobi/bumblebee-status
+https://github.com/sbugzu/gruvbox-zsh
