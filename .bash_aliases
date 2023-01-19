@@ -9,17 +9,16 @@ alias ca="conda activate"
 alias py3="python3"
 alias gs="git status"
 alias gcam="git commit -am "
+alias cd..="cd .."
+alias cp="cp -r"
+alias rm="rm -r"
 
 # for docker
 dcon() { docker exec -i -t $@ /bin/bash ;}
 alias dls='docker ps'
 
 alias vim="nvim" # nvim > vim
+alias v="nvim" # nvim > vim
 alias python="python3" # python3 > python
 # login to school computers
 alias school="sshudson@linux.student.cs.uwaterloo.ca"
-
-# when logged into the school VPN, wato stuff
-alias thor="sshudson@vm1.thor.watonomous.ca"
-alias delta="sshudson@vm1.delta.watonomous.ca"
-
