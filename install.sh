@@ -7,6 +7,8 @@ apt-get install -y nodejs # for COC
 apt-get install -y neovim
 apt-get install -y npm
 apt-get install -y rofi
+apt-get install -y feh
+apt-get install -y neofetch
 
 npm cache clean -f
 npm install -g n
